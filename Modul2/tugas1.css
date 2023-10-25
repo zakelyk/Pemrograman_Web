@@ -1,0 +1,101 @@
+body {
+  background: linear-gradient(100deg, #c6dffe 55%, white);
+  height: 97vh;
+  width: 98%;
+  justify-content: center;
+  align-items: center;
+  display: flex;
+}
+
+input {
+  width: 222px;
+  height: 70px;
+  color: white;
+  font-size: 50px;
+  text-align: right;
+}
+
+input:focus {
+  outline: none;
+}
+
+input,
+.calculator {
+  background-color: #384450;
+  border-color: transparent;
+}
+
+.calculator {
+  padding-left: 10px;
+  padding-right: 10px;
+  padding-bottom: 20px;
+  padding-top: 30px;
+  border-radius: 10px;
+  font-weight: bold;
+}
+
+.main {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 90vh;
+  width: 100%;
+  margin-right: 10%;
+}
+
+.title {
+  justify-content: start;
+  align-items: baseline;
+  padding-right: 10vw;
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+.buttons {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 10px;
+  margin-top: 20px;
+  font-size: 30px;
+}
+
+.calculator {
+  border-radius: 2px solid #333;
+}
+
+.title h1,
+.title p {
+  margin: 0; /* Menghilangkan margin default */
+  padding: 3px 0; /* Kasih sedikit padding biar gak nempel banget */
+}
+
+button {
+  height: 48px;
+  width: 48px;
+  background-color: #384450;
+  border: none; /* Menghapus border default */
+  border-radius: 5px; /* Memberikan sudut bulat */
+  box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.2),
+    -2px -2px 5px rgba(255, 255, 255, 0.7);
+  /* Shadow untuk efek timbul */
+  cursor: pointer;
+  color: white;
+}
+
+.uniq_button {
+  gap: 12px;
+  display: flex;
+  margin-top: 10px;
+}
+
+button:hover {
+  background-color: #47515b; /* Warna tombol saat di-hover */
+}
+
+button:active {
+  box-shadow: inset 1px 1px 2px rgba(0, 0, 0, 0.2),
+    inset -1px -1px 2px rgba(255, 255, 255, 0.7);
+  /* Menggunakan 'inset' untuk efek tekan ke dalam */
+}
+.green-btn {
+  color: green;
+}

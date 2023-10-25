@@ -1,0 +1,95 @@
+.main {
+  padding-top: 50px;
+  display: grid;
+  justify-content: center;
+}
+.add {
+  border: 1px solid gray;
+  border-radius: 3px;
+  height: 150px;
+  width: 60vw;
+  overflow: hidden;
+  padding-bottom: 10px;
+}
+.items {
+  border: 1px solid gray;
+  border-radius: 3px;
+  width: 60vw;
+  overflow: hidden;
+}
+.head,
+.body {
+  padding-left: 30px;
+  padding-right: 30px;
+}
+.add .head {
+  display: flex;
+  align-items: center;
+  height: 30%;
+  background-color: #007bff;
+}
+.body {
+  background-color: white;
+}
+.add .body {
+  height: 60%;
+  background-color: white;
+  padding-bottom: 10px;
+}
+.items .body {
+  background-color: white;
+  padding-top: 30px;
+  padding-bottom: 30px;
+}
+
+.add_input {
+  display: flex;
+  gap: 10px;
+  height: 40%;
+}
+.add_input input,
+.add_input button {
+  border-radius: 5px;
+}
+.add_input input {
+  width: 80%;
+  border-style: solid;
+  border-width: 1px;
+  outline: none;
+}
+.add_input button {
+  width: 20%;
+  border: none;
+  font-size: 16px;
+  outline: none;
+  background-color: #218838;
+  color: white;
+  position: relative;
+}
+.items .head {
+  display: flex;
+  align-items: center;
+  height: 30%;
+  background-color: #17a2b8;
+}
+div {
+  font-family: "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS", sans-serif;
+}
+.list input {
+  border: none;
+  border-color: transparent;
+  outline: none;
+  width: 80%;
+}
+.border-list {
+  align-items: center;
+  border: 1px solid gray;
+  border-radius: 5px;
+  height: 50px;
+}
+.list {
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}

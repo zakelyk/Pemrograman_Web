@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <script>
+      function jumlah() {
+        var a = parseFloat(document.getElementById("first").value);
+        var b = parseFloat(document.getElementById("second").value);
+
+        var result = a + b;
+        alert("Hasil Penjumlahan = " + result);
+      }
+    </script>
+  </head>
+  <body>
+    <h1>PENJUMLAHAN BILANGAN</h1>
+
+    <p>
+      <label for="first">Bilangan pertama : </label>
+      <input id="first" type="text" width="50" />
+      <label for="second">Bilangan Kedua : </label>
+      <input id="second" type="text" width="50" />
+    </p>
+    <button id="jumlah" onclick="jumlah()">Jumlahkan</button>
+    <button id="reset">Ulang</button>
+  </body>
+</html>

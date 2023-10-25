@@ -1,0 +1,93 @@
+body {
+  font-family: Arial, Helvetica, sans-serif;
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  padding-top: 30px;
+  background-color: #f8f9fa;
+}
+.card {
+  display: flex;
+  flex-direction: column;
+  border: 1px solid gray;
+  width: 50vw;
+  border-radius: 3px;
+  color: white;
+  overflow: hidden;
+}
+#main {
+  background-color: #007bff;
+}
+#activities {
+  background-color: #17a2b8;
+}
+.header {
+  padding-left: 20px;
+}
+.body {
+  background-color: white;
+  width: 100%-20px;
+  padding: 20px 20px 20px 20px;
+  color: black;
+}
+#input_activity,
+#list div {
+  height: 40px;
+  padding: 5px 10px;
+  font-size: 16px;
+  box-sizing: border-box;
+  vertical-align: middle;
+  width: 78%;
+}
+#add {
+  height: 40px;
+  padding: 5px 15px;
+  font-size: 16px;
+  cursor: pointer;
+  background-color: #218838;
+  color: white;
+  border: none;
+  border-radius: 5px;
+  box-sizing: border-box;
+  vertical-align: middle;
+  width: 20%;
+}
+#list div {
+  border: 1px solid gray;
+  border-radius: 3px;
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  gap: 3px;
+}
+.description {
+  outline: none;
+  border: transparent;
+  width: 80%;
+  font-size: 15px;
+}
+.description.checked {
+  text-decoration: line-through;
+  color: black;
+  font-weight: bolder;
+}
+.check {
+  color: white;
+  border: none;
+  cursor: pointer;
+}
+
+.edit-btn,
+.check-btn {
+  background-color: #28a745;
+}
+.delete-btn {
+  background-color: #dc3545;
+}
+.edit-btn,
+.check-btn,
+.delete-btn {
+  color: white;
+  border: none;
+  border-radius: 3px;
+}
