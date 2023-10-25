@@ -1,7 +1,6 @@
 import React from "react";
 import { BrowserRouter as Router, Route, Link, Routes } from "react-router-dom";
-// import About from "./Pages/about";
-// import Menu from "./ages/menu";
+import Footer from "./Components/Footer";
 
 const Menu = () => <h1>Halaman Utama</h1>;
 const About = () => <h1>Tentang kami</h1>;
@@ -28,6 +27,7 @@ function App() {
         <Route path="/Contacts" Component={Contacts} />
         <Route path="/" Component={Menu} />
       </Routes>
+      <Footer />
     </Router>
   );
 }
