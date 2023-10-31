@@ -14,13 +14,13 @@ const Navbar = () => {
             alt="Bootstrap"
           />
         </a>
-      {/* </div> */}
-      {/* <div class="navbar-nav" style={{ paddingLeft: '20px' }}> */}
-        <Link class="nav-link" aria-current="page" to="/">HOME</Link>
+      </div>
+      <div class="navbar-nav" style={{ paddingLeft: '20px' }}>
+        <Link class="nav-link" aria-current="page" to="/Home">HOME</Link>
         {/* <a class="nav-link" aria-current="page" href="#">HOME</a> */}
         <Link class="nav-link" aria-current="page" to="/About">ABOUT US</Link>
         {/* <a class="nav-link" href="#">ABOUT US</a> */}
-        <Link class="nav-link" aria-current="page" to="/Contact">Contact US</Link>
+        <Link class="nav-link" aria-current="page" to="/Contacts">CONTACT US</Link>
         {/* <a class="nav-link" href="#">CONTACT</a> */}
       </div>
       <div class="navbar-nav" style={{ paddingRight: '2%' }}>

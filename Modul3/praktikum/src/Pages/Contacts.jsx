@@ -5,9 +5,9 @@ import Footer from "../Components/Footer";
 const Contacts = () => {
   return (
     <>
-      <Navbar />
+      
       <p>Halaman Contacts</p>
-      <Footer />
+      
     </>
   );
 };

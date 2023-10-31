@@ -5,9 +5,9 @@ import Footer from "../Components/Footer";
 const About = () => {
   return (
     <>
-      <Navbar />
+      
       <p>Halaman About Us</p>
-      <Footer />
+      
     </>
   );
 };
