@@ -16,7 +16,7 @@ const Navbar = () => {
         </a>
       </div>
       <div class="navbar-nav" style={{ paddingLeft: '20px' }}>
-        <Link class="nav-link" aria-current="page" to="/Home">HOME</Link>
+        <Link class="nav-link" aria-current="page" to="/">HOME</Link>
         {/* <a class="nav-link" aria-current="page" href="#">HOME</a> */}
         <Link class="nav-link" aria-current="page" to="/About">ABOUT US</Link>
         {/* <a class="nav-link" href="#">ABOUT US</a> */}
