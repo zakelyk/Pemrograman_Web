@@ -12,8 +12,8 @@ class Controller
     public function getControllerAttribut()
     {
         return[
-            "ControllerName" => $this->controllerName,
-            "Method" => $this->controllerMethod
+            "ControllerName" =>$this ->controllerName,
+            "Method"=> $this ->controllerMethod
         ];
     }
 }
