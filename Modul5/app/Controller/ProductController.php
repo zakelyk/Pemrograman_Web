@@ -24,17 +24,13 @@ class ProductController{
     }
 
     public function insert(){
-        $jsonInput = file_get_contents('pjp://input');
+        $jsonInput = file_get_contents('php://input');
         $inputData = json_decode($jsonInput, true);
-        if(json_last_error()){
-            return $this->apiResponse(400, "error invalid inpit", null);
-        }
-
+        if(json_last_error()){return $this->apiResponse(400, "error invalid inpit", null);}
         $productModel = new Product();
         $response = $productModel->create([
-            "product_name" => $inputData['product-name']
+            "product_name" => $inputData['product_name']
         ]);
-
         return $this->apiResponse(200, "Success", $response);
     }
 

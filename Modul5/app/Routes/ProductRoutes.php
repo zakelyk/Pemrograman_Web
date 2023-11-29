@@ -17,17 +17,21 @@ class ProductRoutes{
             $controller = new ProductController();
             echo $controller->getById($id);
         }
-
         if($method=== 'POST' && $path === '/api/product'){
             $controller = new ProductController();
             echo $controller->insert($id);
         }
-
-        if($method=== 'POST' && strpos($path, '/api/product')===0){
+        if($method=== 'PUT' && strpos($path, '/api/product')===0){
             $pathParts = explode('/', $path);
             $id = $pathParts[count($pathParts) - 1];
             $controller = new ProductController();
             echo $controller->update($id);
+        }
+        if($method=== 'DELETE' && strpos($path, '/api/product')===0){
+            $pathParts = explode('/', $path);
+            $id = $pathParts[count($pathParts) - 1];
+            $controller = new ProductController();
+            echo $controller->delete($id);
         }
     }
 }
