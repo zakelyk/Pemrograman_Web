@@ -4,13 +4,12 @@ namespace app\Traits;
 
 trait ApiResponseFormatter
 {
-    public function apiResponse($code = 200, $message = "message", $data = [])
-    {
-        return json_encode([
-            "code" => $code,
-            "message" => $message,
-            "data" => $data
-        ]);
-    }
+  public function apiResponse($code = 200, $message = "successd", $data = [])
+  {
+    return json_encode([
+      "code" => $code,
+      "message" => $message,
+      "data" => $data
+    ]);
+  }
 }
-?>

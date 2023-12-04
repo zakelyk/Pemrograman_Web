@@ -57,11 +57,11 @@ def create_table(host, user, password):
 
         # Create the 'praktikum' table
         cursor.execute("""
-            CREATE TABLE IF NOT EXISTS praktikum (
+            CREATE TABLE IF NOT EXISTS products (
                 id INT AUTO_INCREMENT PRIMARY KEY,
                 product_name VARCHAR(225),
                 created_at TIMESTAMP,
-                updated_at TIMESTAMP
+                updated_at TIMESTAMP DEFAULT CURRENT_TIMESTAMP ON UPDATE CURRENT_TIMESTAMP
             )
         """)
 
