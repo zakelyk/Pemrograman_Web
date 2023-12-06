@@ -1,6 +1,6 @@
 <?php 
 
-namespace app\Routes;
+namespace Codelab\Routes;
 
 include "app/Controller/ProductController.php";
 
